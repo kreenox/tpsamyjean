@@ -105,8 +105,8 @@ void seteMail(String eMail) {
 }
 
 /*action*/
-  public void creerStage(String siret, String idStage, String titre, Date dateDebut,
-			Date dateFin, String nomEntreprise, boolean remunererPossible,
+  public void creerStage(String titre, Date dateDebut,
+			Date dateFin, boolean remunererPossible,
 			double paie){
 	  
   }
