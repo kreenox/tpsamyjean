@@ -2,7 +2,7 @@ package UI;
 
 import javax.swing.*;
 
-class Princ extends JFrame
+public class Princ extends JFrame
 {
 
 	private JButton entre = new JButton("Gestion entreprise");//permet de gerer les entreprise
