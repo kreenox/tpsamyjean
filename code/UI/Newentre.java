@@ -40,8 +40,11 @@ class newentre extends JFrame
 
 	public Newentre()
 	{
+		//mise en place de la fentre
 		this.setTitle("GestStage - Nouvelle entreprise");
 		this set size(640, 480);
+		//gestion des panels et mise en place du formulaire
+		//mise en place de la base
 
 	}
 
