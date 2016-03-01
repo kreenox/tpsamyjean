@@ -56,7 +56,56 @@ class newentre extends JFrame
 		horizon.add(textsir);
 		pane.add(horizon);
 		//ajout de la raison sociale
-
+		horizon = new JPanel();
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.add(labrais);
+		horizon.add(textrais);
+		pane.add(horizon);
+		//ajout de l'adresse
+		horizon = new JPanel();
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.add(labadr);
+		horizon.add(textadr);
+		pane.add(horizon);
+		//ajout du code postal
+		//a  voir avec l'eventuelle remplacement du composant
+		horizon = new JPanel();
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.add(labcode);
+		horizon.add(textcode);
+		pane.add(horizon);
+		//ajout de la ville
+		horizon = new JPanel();
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.add(labvill);
+		horizon.add(textvill);
+		pane.add(horizon);
+		//ajout du domaine
+		horizon = new JPanel();
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.add(labdom);
+		horizon.add(textdom);
+		pane.add(horizon);
+		//ajout de l'email
+		horizon = new JPanel();
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.add(labemai);
+		horizon.add(textemai);
+		pane.add(horizon);
+		//ajout du telehpone
+		horizon = new JPanel();
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.add(labtel);
+		horizon.add(texttel);
+		pane.add(horizon);
+		//ajout des bouton ok annule
+		horizon = new JPanel();
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.add(val);
+		horizon.add(anule);
+		pane.add(horizon);
+		//affichage de la fenetre
+		this.setVisible(true);
 	}
 
 }
