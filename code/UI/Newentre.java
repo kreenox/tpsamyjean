@@ -9,7 +9,7 @@ class newentre extends JFrame
 	private JButton val = new JButton("valider");
 	private Jbutton anule = new JButton("annuler");
 	private JPanel pane;
-	private Jlabel = new JLabel("Veuillez entrer les donnés de l'entreprise");
+	private Jlabel text = new JLabel("Veuillez entrer les donnés de l'entreprise");
 	//formulaire de création d'entreprise
 	//forme label/zone de texte
 	//siret
@@ -43,8 +43,19 @@ class newentre extends JFrame
 		//mise en place de la fentre
 		this.setTitle("GestStage - Nouvelle entreprise");
 		this set size(640, 480);
-		//gestion des panels et mise en place du formulaire
-		//mise en place de la base
+		//gestion des panels et mise en place des composants
+		pane = new JPanel();
+		this.getContentPane().add(pane);
+		pane.setLayout(new BoxLayout(pane, BoxLayout.PAGE_AXIS));
+		//ajout des elements de presentation
+		pane.add(text);
+		//ajout du siret
+		JPanel horizon = newJPanel();//panels horizontaux pour les composantsant du formulaire
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.add(labsir);
+		horizon.add(textsir);
+		pane.add(horizon);
+		//ajout de la raison sociale
 
 	}
 
