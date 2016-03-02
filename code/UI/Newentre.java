@@ -42,7 +42,7 @@ public class Newentre extends JFrame
 	{
 		//mise en place de la fentre
 		this.setTitle("GestStage - Nouvelle entreprise");
-		this set size(640, 480);
+		this.setSize(640, 480);
 		//gestion des panels et mise en place des composants
 		pane = new JPanel();
 		this.getContentPane().add(pane);
