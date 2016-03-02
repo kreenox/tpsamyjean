@@ -7,9 +7,9 @@ public class Newentre extends JFrame
 {
 	//base de la fenetre
 	private JButton val = new JButton("valider");
-	private Jbutton anule = new JButton("annuler");
+	private JButton anule = new JButton("annuler");
 	private JPanel pane;
-	private Jlabel text = new JLabel("Veuillez entrer les donnés de l'entreprise");
+	private JLabel text = new JLabel("Veuillez entrer les donnés de l'entreprise");
 	//formulaire de création d'entreprise
 	//forme label/zone de texte
 	//siret
@@ -50,7 +50,7 @@ public class Newentre extends JFrame
 		//ajout des elements de presentation
 		pane.add(text);
 		//ajout du siret
-		JPanel horizon = newJPanel();//panels horizontaux pour les composantsant du formulaire
+		JPanel horizon = new JPanel();//panels horizontaux pour les composantsant du formulaire
 		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
 		horizon.add(labsir);
 		horizon.add(textsir);
