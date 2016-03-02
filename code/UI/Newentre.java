@@ -3,7 +3,7 @@ package UI;
 import javax.swing.*;
 
 
-public class newentre extends JFrame
+public class Newentre extends JFrame
 {
 	//base de la fenetre
 	private JButton val = new JButton("valider");
