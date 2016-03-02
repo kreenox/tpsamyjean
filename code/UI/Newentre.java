@@ -1,7 +1,7 @@
 
+package UI;
 import javax.swing.*;
 
-package UI;
 
 public class newentre extends JFrame
 {
