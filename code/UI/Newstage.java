@@ -1,47 +1,46 @@
-
 package UI;
 import javax.swing.*;
 
+//Merci Kreenox pour le DVD
 
-public class Newentre extends JFrame
+public class Newstage extends JFrame
 {
 	//base de la fenetre
 	private JButton val = new JButton("valider");
 	private JButton anule = new JButton("annuler");
 	private JPanel pane;
-	private JLabel text = new JLabel("Veuillez entrer les donnés de l'entreprise");
+	private JLabel text = new JLabel("Veuillez entrer les donnés du stage");
 	//formulaire de création d'entreprise
 	//forme label/zone de texte
 	//siret
 	private JLabel labsir = new JLabel("SIRET");
 	private JTextField textsir = new JTextField(14);
-	//raison sociale
-	private JLabel labrais = new JLabel("Raison sociale");
-	private JTextField textrais = new JTextField();
-	//adresse
-	private JLabel labadr = new JLabel("Adresse");
-	private JTextField textadr = new JTextField();
-	//code postal
-	private JLabel labcode = new JLabel("Code postal");
-	private JTextField textcode = new JTextField();//voir si il n'y as pas un meilleur widget
-	//ville
-	private JLabel labvill = new JLabel("Ville");
-	private JTextField textvill = new JTextField();
-	//domaine de production
-	private JLabel labdom = new JLabel("Domaine");
-	private JTextField textdom = new JTextField();
-	//email
-	private JLabel labemai = new JLabel("eMail");
-	private JTextField textemai = new JTextField();
-	//telephone
-	private JLabel labtel = new JLabel("N° de telephone");
-	private JTextField texttel = new JTextField();
+	//nom de l'offre
+	private JLabel laboff = new JLabel("Nom de l'offre");
+	private JTextField textoff = new JTextField();
+	//nom de l'entreprise
+	private JLabel labent = new JLabel("Nom de l'entreprise");
+	private JTextField textent = new JTextField();
+	//date de début
+	private JLabel labdebu = new JLabel("Date de début");
+	private JTextField textdebu = new JTextField();// trouvé autre chose
+	//date de fin
+	private JLabel labfin = new JLabel("Date de fin");
+	private JTextField textfin = new JTextField();//ouais, autre chose
+	//remunération possible?
+	private JLabel labrem = new JLabel("Rémunération");
+	JRadioButton radio1 = new JRadioButton("Oui", true);
+	JRadioButton radio2 = new JRadioButton("Non");
+	ButtonGroup group = new ButtonGroup();
+	//paie
+	private JLabel labpaie = new JLabel("Salaire journalier");
+	private JTextField textpaie = new JTextField();
 	//fin du formulaire
 
-	public Newentre()
+	public Newstage()
 	{
 		//mise en place de la fentre
-		this.setTitle("GestStage - Nouvelle entreprise");
+		this.setTitle("GestStage - Nouveau Stage");
 		this.setSize(640, 480);
 		//gestion des panels et mise en place des composants
 		pane = new JPanel();
@@ -55,48 +54,45 @@ public class Newentre extends JFrame
 		horizon.add(labsir);
 		horizon.add(textsir);
 		pane.add(horizon);
-		//ajout de la raison sociale
+		//ajout du nom de l'offre
 		horizon = new JPanel();
 		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
-		horizon.add(labrais);
-		horizon.add(textrais);
+		horizon.add(laboff);
+		horizon.add(textoff);
 		pane.add(horizon);
-		//ajout de l'adresse
+		//ajout du nom de l'entreprise
 		horizon = new JPanel();
 		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
-		horizon.add(labadr);
-		horizon.add(textadr);
+		horizon.add(labent);
+		horizon.add(textent);
 		pane.add(horizon);
-		//ajout du code postal
+		//ajout de la date de début
 		//a  voir avec l'eventuelle remplacement du composant
 		horizon = new JPanel();
 		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
-		horizon.add(labcode);
-		horizon.add(textcode);
+		horizon.add(labdebu);
+		horizon.add(textdebu);
 		pane.add(horizon);
-		//ajout de la ville
+		//ajout de la date de fin
 		horizon = new JPanel();
 		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
-		horizon.add(labvill);
-		horizon.add(textvill);
+		horizon.add(labfin);
+		horizon.add(textfin);
 		pane.add(horizon);
-		//ajout du domaine
+		//ajout de la rémunération RadioButton
 		horizon = new JPanel();
 		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
-		horizon.add(labdom);
-		horizon.add(textdom);
+		horizon.add(labrem);
+		horizon.add(radio1);
+		horizon.add(radio2);
+		group.add(radio1);
+		group.add(radio2);
 		pane.add(horizon);
-		//ajout de l'email
+		//ajout de la paie
 		horizon = new JPanel();
 		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
-		horizon.add(labemai);
-		horizon.add(textemai);
-		pane.add(horizon);
-		//ajout du telehpone
-		horizon = new JPanel();
-		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
-		horizon.add(labtel);
-		horizon.add(texttel);
+		horizon.add(labpaie);
+		horizon.add(textpaie);
 		pane.add(horizon);
 		//ajout des bouton ok annule
 		horizon = new JPanel();
