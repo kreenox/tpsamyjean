@@ -37,7 +37,7 @@ public class Newstage extends JFrame
 	private JTextField textpaie = new JTextField();
 	//fin du formulaire
 
-	public Newstage()
+	public Newstage(ActionListener a)
 	{
 		//mise en place de la fentre
 		this.setTitle("GestStage - Nouveau Stage");
@@ -104,4 +104,28 @@ public class Newstage extends JFrame
 		this.setVisible(true);
 	}
 
+	//get des zones de text
+
+	public String getSIRET()
+	{return textsir.getText();}
+	public String getOffre()
+	{return textoff.getText();}
+	public String getNom()
+	{return textent.getText();}
+	public String getDateDebut()
+	{return textdebu.getText();}
+	public String getDateFin()
+	{return textfin.getText();}
+	public boolean isPaid()
+	{
+		if(radio1.isSelected())
+			return true;
+		else return false;
+	}
+	public String getPaie()
+	{
+		if(ispaid())
+			return textsir.getText();
+		else return null;
+	}
 }

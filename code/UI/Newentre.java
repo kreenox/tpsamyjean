@@ -38,7 +38,7 @@ public class Newentre extends JFrame
 	private JTextField texttel = new JTextField();
 	//fin du formulaire
 
-	public Newentre()
+	public Newentre(ActionListener A)
 	{
 		//mise en place de la fentre
 		this.setTitle("GestStage - Nouvelle entreprise");
@@ -107,5 +107,23 @@ public class Newentre extends JFrame
 		//affichage de la fenetre
 		this.setVisible(true);
 	}
+
+	//get des zones de texte
+	public String getSIRET()
+	{return textsir.getText();}
+	public String getRaison()
+	{return textrais.getText();}
+	public String getAdresse()
+	{return textadr.getText();}
+	public String getCode()
+	{return textcode.getText();}
+	public String getVille()
+	{return textvill.getText();}
+	public String getDomaine()
+	{return textdom.getText();}
+	public String getEmail()
+	{return textemai.getText();}
+	public String getTelephone()
+	{return texttel.getText();}
 
 }
