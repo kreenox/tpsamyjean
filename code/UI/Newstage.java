@@ -102,6 +102,13 @@ public class Newstage extends JFrame
 		pane.add(horizon);
 		//affichage de la fenetre
 		this.setVisible(true);
+
+		//fin affichage
+		//configuration des bouton
+		val.setActionCommand("val - newstage");
+		val.addActionListener(a);
+		anule.setActionListener("annule - newstage");
+		annule.addAction(a);
 	}
 
 	//get des zones de text

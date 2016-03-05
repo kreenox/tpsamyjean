@@ -106,6 +106,14 @@ public class Newentre extends JFrame
 		pane.add(horizon);
 		//affichage de la fenetre
 		this.setVisible(true);
+
+		//fin affichage fentre
+		//debut de gestion des actions
+		val.setActionCommand("valide - newentre");
+		val.addActionListener(a);
+		anule.setActionCommand("annule - newentre");
+		anule.addActionListener(a);
+		
 	}
 
 	//get des zones de texte
