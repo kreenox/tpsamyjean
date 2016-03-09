@@ -10,7 +10,8 @@ public class Princ extends JFrame
 	private JButton anule = new JButton("quitter");//quitte l'application
 	private JPanel pane;
 	private JLabel text = new JLabel("Gestion des offres de stage\nUniversite d'Evry Val d'Essone");
-	private JTextField entrepriseUser = new JTextField("Identification siret");
+	private JTextField entrepriseUser = new JTextField("Identification siret", 14); //si il veut creer une nouvelle entreprise : mettre un 0
+	private JLabel conseil = new JLabel("Pour créer une nouvelle entreprise : mettez 0");
 	public Princ()
 	{
 		this.setTitle("GestStage - menu principal");
@@ -19,21 +20,29 @@ public class Princ extends JFrame
 		//debut de l'affichage
 		//
 		//	TITRE
-		//
+		//      
 		//	gestion entreprise		consultation des stages
 		//	siretidentification
+		// 	conseil
 		//				quitter l'application
 		//
 
+
 		//gestion des panels
 		pane = new JPanel();
-		this.getContentPane().add(pane);
+		this.setContentPane(pane);
 		JPanel horizon = new JPanel();//panel horizontal pour les boutons entre et consult
 		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
 		pane.setLayout(new BoxLayout(pane, BoxLayout.PAGE_AXIS));
 
+		pane2 = new JPanel();
+		pane2.setLayout( new BoxLayout(pane2, BoxLayout.PAGE_AXIS));
+		pane2.add(entre);
+		pane2.add(entrepriseUser);
+		pane2.add(conseil);
+
 		//assemblage
-		horizon.add(entre);
+		horizon.setContentPane(pane2);
 		horizon.add(consult);
 		pane.add(text);
 		pane.add(horizon);
@@ -41,5 +50,7 @@ public class Princ extends JFrame
 		//affichage
 		this.setVisible(true);
 	}
+
+	public void getEntrepriseUser(){ return entrepriseUser;}
 
 }
