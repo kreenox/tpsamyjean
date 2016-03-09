@@ -10,7 +10,7 @@ public class Princ extends JFrame
 	private JButton anule = new JButton("quitter");//quitte l'application
 	private JPanel pane;
 	private JLabel text = new JLabel("Gestion des offres de stage\nUniversite d'Evry Val d'Essone");
-	//private JTextField VOID; juste pou plus tard aucun interet
+	private JTextField entrepriseUser = new JTextField("Identification siret");
 	public Princ()
 	{
 		this.setTitle("GestStage - menu principal");
@@ -21,6 +21,7 @@ public class Princ extends JFrame
 		//	TITRE
 		//
 		//	gestion entreprise		consultation des stages
+		//	siretidentification
 		//				quitter l'application
 		//
 
