@@ -78,4 +78,19 @@ public class ConsultStage extends JFrame{
 
 	}
 
+	//set des elements de la fenetre
+	public void setIntitule(String s)
+	{inticont.setText(s);}
+	public void setCode(String s)
+	{codecont.setText(s);}
+	public void setVille(String s)
+	{villecont.setText(s);}
+	public void setDomaine(String s)
+	{domcont.setText(s);}
+	public void setEmail(String s)
+	{emailcont.setText(s)}
+	public void setTelephone(String s)
+	{telcont.setText(s);}
+
+
 }
