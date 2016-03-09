@@ -46,6 +46,30 @@ public class ConsultStage extends JFrame{
 		horizon.add(code);
 		horizon.add(codecont);
 		pane.add(horizon);
+		//ville
+		horizon = new JPanel();
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.add(ville);
+		horizon.add(villecont);
+		pane.add(horizon);
+		//domaine
+		horizon = new JPanel();
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.add(dom);
+		horizon.add(domcont);
+		pane.add(horizon);
+		//email
+		horizon = new JPanel();
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.add(email);
+		horizon.add(emailcont);
+		pane.add(horizon);
+		//telephone
+		horizon = new JPanel();
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.add(tel);
+		horizon.add(telcont);
+		pane.add(horizon);
 		//affichage
 		this setVisible(true);
 		//actions
