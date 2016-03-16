@@ -3,6 +3,7 @@
 package UI;
 
 import javax.swing.*;
+import java.awt.event.*;
 
 public class ConsultStage extends JFrame{
 
@@ -20,7 +21,7 @@ public class ConsultStage extends JFrame{
 	private JLabel tel = new JLabel("telephone : ");
 	private JLabel telcont = new JLabel("");
 	//bouton retour
-	private JBouton ret = new JBouton("retour");
+	private JButton ret = new JButton("retour");
 	private JPanel pane = new JPanel();
 
 
@@ -30,13 +31,13 @@ public class ConsultStage extends JFrame{
 		this.setTitle("GestStage - consultation d'offre");
 
 		//debut de l'affichage
-		pane.setContentPane(pane);
+		this.setContentPane(pane);
 		pane.setLayout(new BoxLayout(pane, BoxLayout.PAGE_AXIS));
 		pane.add(text);
 		//ajout des elements du stage
 		//intitule du stage
 		JPanel horizon = new JPanel();//panels horizontaux pour les composant horizontaux
-		horizon.setLayout(nex BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
 		horizon.add(inti);
 		horizon.add(inticont);
 		pane.add(horizon);
@@ -71,10 +72,10 @@ public class ConsultStage extends JFrame{
 		horizon.add(telcont);
 		pane.add(horizon);
 		//affichage
-		this setVisible(true);
+		this.setVisible(true);
 		//actions
 		ret.addActionListener(A);
-		ret.addActionCommand("retour - consultstage");
+		ret.setActionCommand("retour - consultstage");
 
 	}
 
@@ -88,7 +89,7 @@ public class ConsultStage extends JFrame{
 	public void setDomaine(String s)
 	{domcont.setText(s);}
 	public void setEmail(String s)
-	{emailcont.setText(s)}
+	{emailcont.setText(s);}
 	public void setTelephone(String s)
 	{telcont.setText(s);}
 
