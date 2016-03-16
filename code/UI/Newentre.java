@@ -1,6 +1,8 @@
 
 package UI;
 import javax.swing.*;
+import java.awt.event.ActionListener;
+
 
 
 public class Newentre extends JFrame
@@ -105,14 +107,14 @@ public class Newentre extends JFrame
 		horizon.add(anule);
 		pane.add(horizon);
 		//affichage de la fenetre
-		this.setVisible(true);
+		//this.setVisible(true);
 
 		//fin affichage fentre
 		//debut de gestion des actions
 		val.setActionCommand("valide - newentre");
-		val.addActionListener(a);
+		val.addActionListener(A);
 		anule.setActionCommand("annule - newentre");
-		anule.addActionListener(a);
+		anule.addActionListener(A);
 		
 	}
 

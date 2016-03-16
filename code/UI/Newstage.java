@@ -102,7 +102,7 @@ public class Newstage extends JFrame
 		horizon.add(anule);
 		pane.add(horizon);
 		//affichage de la fenetre
-		this.setVisible(true);
+		//this.setVisible(true);
 
 		//fin affichage
 		//configuration des bouton

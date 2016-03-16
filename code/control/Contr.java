@@ -1,4 +1,4 @@
-package controle;
+package control;
 
 import UI.*;
 import model.*;
@@ -55,7 +55,7 @@ public class Contr implements ActionListener{
 		}
 	}
 
-	public setfen(Princ fen, ConsultStage cnsstg, Newstage nwstg, Newentre nwntr)
+	public void setfen(Princ fen, ConsultStage cnsstg, Newstage nwstg, Newentre nwntr)
 	{
 		fenprinc = fen;
 		fenconsult = cnsstg;

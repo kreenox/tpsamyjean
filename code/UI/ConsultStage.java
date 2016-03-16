@@ -72,7 +72,7 @@ public class ConsultStage extends JFrame{
 		horizon.add(telcont);
 		pane.add(horizon);
 		//affichage
-		this.setVisible(true);
+		//this.setVisible(true);
 		//actions
 		ret.addActionListener(A);
 		ret.setActionCommand("retour - consultstage");
