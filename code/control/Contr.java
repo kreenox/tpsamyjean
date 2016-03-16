@@ -3,16 +3,17 @@ package controle;
 import UI.*;
 import model.*;
 import javax.swing.*;
+import java.awt.event.*;
 
 public class Contr implements ActionListener{
 
 	Princ		fenprinc;
 	ConsultStage	fenconsult;
 	Newstage	fennouvstage;
-	NewEntre	fennouventre;
+	Newentre	fennouventre;
 	
 
-	public Contr(Princ fen, ConsultStage cnsstg, NewStage nwstg, NewEntre nwntr)
+	public Contr(Princ fen, ConsultStage cnsstg, Newstage nwstg, Newentre nwntr)
 	{
 		fenprinc = fen;
 		fenconsult = cnsstg;
@@ -40,14 +41,14 @@ public class Contr implements ActionListener{
 		//princ
 		case "entre - princ":
 			fenprinc.setVisible(false);
-			if(fenprinc.getEntrepriseUser() == "0";
+			if(fenprinc.getEntrepriseUser() == "0")
 				fennouventre.setVisible(true);
-			else fennouvstage.setvisible(true);
+			else fennouvstage.setVisible(true);
 
 			break;
 		case "consult - princ":
 			fenprinc.setVisible(false);
-			fenconsult.setvisible(true);
+			fenconsult.setVisible(true);
 			break;
 		case "anule - princ":
 			System.exit(0);
