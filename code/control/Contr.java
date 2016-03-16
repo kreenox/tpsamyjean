@@ -13,12 +13,8 @@ public class Contr implements ActionListener{
 	Newentre	fennouventre;
 	
 
-	public Contr(Princ fen, ConsultStage cnsstg, Newstage nwstg, Newentre nwntr)
+	public Contr()
 	{
-		fenprinc = fen;
-		fenconsult = cnsstg;
-		fennouvstage = nwstg;
-		fennouventre = nwntr;
 	}
 
 	public void actionPerformed(ActionEvent e)
@@ -58,6 +54,15 @@ public class Contr implements ActionListener{
 
 		}
 	}
+
+	public setfen(Princ fen, ConsultStage cnsstg, Newstage nwstg, Newentre nwntr)
+	{
+		fenprinc = fen;
+		fenconsult = cnsstg;
+		fennouvstage = nwstg;
+		fennouventre = nwntr;
+	}
+
 
 
 }
