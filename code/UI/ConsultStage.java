@@ -29,7 +29,7 @@ public class ConsultStage extends JFrame{
 		
 		this.setSize(600, 400);
 		this.setTitle("GestStage - consultation d'offre");
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//debut de l'affichage
 		this.setContentPane(pane);
 		pane.setLayout(new BoxLayout(pane, BoxLayout.PAGE_AXIS));

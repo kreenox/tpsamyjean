@@ -43,7 +43,7 @@ public class Newstage extends JFrame
 		//mise en place de la fentre
 		this.setTitle("GestStage - Nouveau Stage");
 		this.setSize(640, 480);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//gestion des panels et mise en place des composants
 		pane = new JPanel();
 		this.getContentPane().add(pane);
