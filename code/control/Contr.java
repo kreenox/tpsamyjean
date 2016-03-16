@@ -25,14 +25,20 @@ public class Contr implements ActionListener{
 		case "valide - newentre":
 			break;
 		case "annule - newentre":
+			fennouventre.setVisible(false);
+			fenprinc.setVisible(true);
 			break;
 		//newstage
 		case "val - newstage":
 			break;
 		case "annule - newstage":
+			fennouvstage.setVisible(false);
+			fenprinc.setVisible(true);
 			break;
 		//consultstage
 		case "retour":
+			fenconsult.setVisible(false);
+			fenprinc.setVisible(true);
 			break;
 		//princ
 		case "entre - princ":
