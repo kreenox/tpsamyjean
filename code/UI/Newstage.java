@@ -1,5 +1,6 @@
 package UI;
 import javax.swing.*;
+import java.awt.event.*;
 
 //Merci Kreenox pour le DVD
 
@@ -107,8 +108,8 @@ public class Newstage extends JFrame
 		//configuration des bouton
 		val.setActionCommand("val - newstage");
 		val.addActionListener(a);
-		anule.setActionListener("annule - newstage");
-		annule.addAction(a);
+		anule.setActionCommand("annule - newstage");
+		anule.addActionListener(a);
 	}
 
 	//get des zones de text
@@ -131,7 +132,7 @@ public class Newstage extends JFrame
 	}
 	public String getPaie()
 	{
-		if(ispaid())
+		if(this.isPaid())
 			return textsir.getText();
 		else return null;
 	}
