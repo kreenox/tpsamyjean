@@ -1,6 +1,7 @@
 package UI;
 
 import javax.swing.*;
+import java.awt.event.ActionListener;
 
 public class Princ extends JFrame
 {
@@ -43,7 +44,7 @@ public class Princ extends JFrame
 		pane2.add(conseil);
 
 		//assemblage
-		horizon.getContentPane().add(pane2);
+		horizon.add(pane2);
 		horizon.add(consult);
 		pane.add(text);
 		pane.add(horizon);
@@ -58,6 +59,6 @@ public class Princ extends JFrame
 		this.setVisible(true);
 	}
  //metttre get quelquechose 
-	public String getEntrepriseUser(){ return entrepriseUser.get();}
+	public String getEntrepriseUser(){ return entrepriseUser.getText();}
 
 }
