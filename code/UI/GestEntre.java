@@ -18,6 +18,9 @@ public class GestEntre extends JFrame
 
 	public GestEntre()
 	{
+		/*temporaire v*/
+		liste = new JList();
+		/*don't forget ^*/
 		this.setSize(600, 400);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setTitle("GestStage - Espace entreprise");

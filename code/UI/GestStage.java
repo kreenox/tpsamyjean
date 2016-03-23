@@ -17,6 +17,13 @@ public class GestStage extends JFrame
 
 	public GestStage()
 	{
+
+		/*temporaire v*/
+		entre = new JList();
+		stage = new JList();
+		dom = new JComboBox();
+		/*don't forget ^*/
+
 		this.setTitle("GestStage - consultation des stage");
 		this.setSize(600, 400);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -37,11 +44,17 @@ public class GestStage extends JFrame
 		horizon.add(ret);
 		horizon.add(val);
 		pane.add(horizon);
+		this.setContentPane(pane);
 
 
 		ret.setActionCommand("geststage - retour");
 		val.setActionCommand("geststage - valider");
+		
+
 	}
+
+
+
 
 	public void setListeners(ActionListener a){
 		val.addActionListener(a);
