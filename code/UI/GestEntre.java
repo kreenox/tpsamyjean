@@ -34,6 +34,11 @@ public class GestEntre extends JFrame
 
 		pane.add(horizon);
 		this.setContentPane(pane);
+		//ajout des commandes de boutons
+		ret.setActionCommand("gestentre - retour");
+		modif.setActionCommand("gestentre - modifier");
+		ajout.setActionCommand("gestentre - ajouter");
+		supp.setActionCommand("gestentre - supprimer");
 	}
 
 }

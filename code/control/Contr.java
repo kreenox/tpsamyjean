@@ -11,6 +11,8 @@ public class Contr implements ActionListener{
 	ConsultStage	fenconsult;
 	Newstage	fennouvstage;
 	Newentre	fennouventre;
+	GestEntre	fengestentre;
+	GestStage	fengeststage;
 	
 
 	public Contr()
@@ -43,17 +45,32 @@ public class Contr implements ActionListener{
 		//princ
 		case "entre - princ":
 			fenprinc.setVisible(false);
-			if(fenprinc.getEntrepriseUser().isEmpty())
-				fennouventre.setVisible(true);
-			else fennouvstage.setVisible(true);
-
+			fengestentre.setVisible(true);
 			break;
 		case "consult - princ":
 			fenprinc.setVisible(false);
-			fenconsult.setVisible(true);
+			fengeststage.setVisible(true);
 			break;
 		case "anule - princ":
 			System.exit(0);
+			break;
+		//gestentre
+		case "gestentre - retour":
+			fengestentre.setVisible(false);
+			fenprinc.setVisible(true);
+			break;
+		case "gestentre - modifier":
+			break;
+		case "gestentre - ajouter":
+			break;
+		case "gestentre - supprimer":
+			break;
+		//geststage
+		case "geststage - retour":
+			fengeststage.setVisible(false);
+			fenprinc.setVisible(true);
+			break;
+		case "geststage - valider":
 			break;
 		default:
 			break;
@@ -61,12 +78,14 @@ public class Contr implements ActionListener{
 		}
 	}
 
-	public void setfen(Princ fen, ConsultStage cnsstg, Newstage nwstg, Newentre nwntr)
+	public void setfen(Princ fen, ConsultStage cnsstg, Newstage nwstg, Newentre nwntr, GestStage nwgsst, GestEntre nwgsnt)
 	{
 		fenprinc = fen;
 		fenconsult = cnsstg;
 		fennouvstage = nwstg;
 		fennouventre = nwntr;
+		fengestentre = nwgsnt;
+		fengeststage = nwgsst;
 	}
 
 
