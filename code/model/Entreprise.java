@@ -5,7 +5,7 @@ import java.util.Date;
 
 
 
-class Entreprise{
+public class Entreprise{
 
   private String siret;
   private String nom;

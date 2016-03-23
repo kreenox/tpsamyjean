@@ -2,8 +2,9 @@ package model;
 
 import java.util.Date;
 
-	
-class Stage{
+public class Stage {
+
+
 	/*Attributs*/
 	private String siret;
 	private String idStage;
@@ -13,11 +14,12 @@ class Stage{
 	private String nomEntreprise;
 	private boolean remunererPossible;
 	private double paie; //l'argent obtenu par jour
+	private String descriptif;
 
 	/*constructeur*/
 	public Stage(String siret, String idStage, String titre, Date dateDebut,
 			Date dateFin, String nomEntreprise, boolean remunererPossible,
-			double paie) {
+			double paie, String descriptif) {
 		this.siret = siret;
 		this.idStage = idStage;
 		this.titre = titre;
@@ -26,6 +28,7 @@ class Stage{
 		this.nomEntreprise = nomEntreprise;
 		this.remunererPossible = remunererPossible;
 		this.paie = paie;
+		this.descriptif=descriptif;
 	}
 	public Stage() {
 		this.siret = "";
@@ -36,8 +39,9 @@ class Stage{
 		this.nomEntreprise = "";
 		this.remunererPossible = false;
 		this.paie = 0.;
+		this.descriptif="";
 	}
-	
+
 	/*get et set*/
 	String getSiret() {
 		return siret;
@@ -87,14 +91,20 @@ class Stage{
 	void setPaie(double paie) {
 		this.paie = paie;
 	}
+	String getDescriptif(){
+		return descriptif;
+	}
+	void setDescriptif(String descriptif){
+		this.descriptif=descriptif;
+	}
 	/*Methode*/
 	public double CalculerRémuneration(Date dd, Date df){
 		if(remunererPossible== false)
 			return 0.;
 		else
-		 return df.getTime()-dd.getTime();
+			return df.getTime()-dd.getTime();
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -113,6 +123,11 @@ class Stage{
 			if (other.dateFin != null)
 				return false;
 		} else if (!dateFin.equals(other.dateFin))
+			return false;
+		if (descriptif == null) {
+			if (other.descriptif != null)
+				return false;
+		} else if (!descriptif.equals(other.descriptif))
 			return false;
 		if (idStage == null) {
 			if (other.idStage != null)
@@ -141,7 +156,7 @@ class Stage{
 			return false;
 		return true;
 	}
-	
-	
-	
+
+
 }
+
