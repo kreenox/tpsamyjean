@@ -3,6 +3,7 @@ package UI;
 
 import javax.swing.*;
 import javax.swing.event.*;
+import java.awt.event.*;
 
 public class GestStage extends JFrame
 {
@@ -42,5 +43,9 @@ public class GestStage extends JFrame
 		val.setActionCommand("geststage - valider");
 	}
 
+	public void setListeners(ActionListener a){
+		val.addActionListener(a);
+		ret.addActionListener(a);
+	}
 
 }

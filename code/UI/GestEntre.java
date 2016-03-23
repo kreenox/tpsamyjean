@@ -2,8 +2,9 @@
 
 package UI;
 
-import contr.*;
+import control.*;
 import javax.swing.*;
+import java.awt.event.*;
 
 public class GestEntre extends JFrame
 {
@@ -41,4 +42,12 @@ public class GestEntre extends JFrame
 		supp.setActionCommand("gestentre - supprimer");
 	}
 
+	public void setListeners(ActionListener a){
+		ret.addActionListener(a);
+		modif.addActionListener(a);
+		ajout.addActionListener(a);
+		supp.addActionListener(a);
+		  
+
+	}
 }
