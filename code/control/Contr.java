@@ -45,7 +45,10 @@ public class Contr implements ActionListener{
 		//princ
 		case "entre - princ":
 			fenprinc.setVisible(false); //penser à corriger
-			fengestentre.setVisible(true);
+			if(fenprinc.getEntrepriseUser().isEmpty())			
+				fennouventre.setVisible(true);	
+			else
+				fengestentre.setVisible(true);
 			break;
 		case "consult - princ":
 			fenprinc.setVisible(false);
