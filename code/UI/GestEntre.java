@@ -18,7 +18,7 @@ public class GestEntre extends JFrame
 	public GestEntre()
 	{
 		this.setSize(600, 400);
-		this.setDefaultCloseOperation(CLOSE_ON_EXIT);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setTitle("GestStage - Espace entreprise");
 
 		pane.setLayout(new BoxLayout(pane, BoxLayout.PAGE_AXIS));
@@ -26,7 +26,7 @@ public class GestEntre extends JFrame
 		pane.add(liste);
 		
 		JPanel horizon = new JPanel();
-		horizon.setLayout(new BoxLayout(horizon, LINE_AXIS));
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
 		horizon.add(ret);
 		horizon.add(ajout);
 		horizon.add(modif);

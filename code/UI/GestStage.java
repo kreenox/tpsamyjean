@@ -18,12 +18,12 @@ public class GestStage extends JFrame
 	{
 		this.setTitle("GestStage - consultation des stage");
 		this.setSize(600, 400);
-		this.setDeafaultCloseAction(EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		//montage des elements
 		pane.setLayout(new BoxLayout(pane, BoxLayout.PAGE_AXIS));
-		pane.add(new JLabel("Consultation des stages");
+		pane.add(new JLabel("Consultation des stages"));
 		//panel horizontal
-		JPanel horizon = new Jpanel();
+		JPanel horizon = new JPanel();
 		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
 		horizon.add(dom);
 		horizon.add(entre);
@@ -32,7 +32,7 @@ public class GestStage extends JFrame
 		pane.add(horizon);
 		//nouveau panel horizontal
 		horizon = new JPanel();
-		horizon.seLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
 		horizon.add(ret);
 		horizon.add(val);
 		pane.add(horizon);
