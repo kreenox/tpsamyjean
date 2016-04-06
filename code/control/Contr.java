@@ -4,6 +4,8 @@ import UI.*;
 import model.*;
 import javax.swing.*;
 import java.awt.event.*;
+import sql.*;
+
 
 public class Contr implements ActionListener{
 
