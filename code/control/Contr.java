@@ -32,6 +32,8 @@ public class Contr implements ActionListener{
 			break;
 		//newstage
 		case "val - newstage":
+			
+			requete_sql.AjoutStage(.getNom(), String cp,String ville, String domaine,String email, String telephone, String siret);
 			break;
 		case "annule - newstage":
 			fennouvstage.setVisible(false);
@@ -44,11 +46,15 @@ public class Contr implements ActionListener{
 			break;
 		//princ
 		case "entre - princ":
-			fenprinc.setVisible(false); //penser à corriger
+			fenprinc.setVisible(true); //penser à corriger
 			if(fenprinc.getEntrepriseUser().isEmpty())			
-				fennouventre.setVisible(true);	
+				fennouventre.setVisible(false);	
 			else
-				fengestentre.setVisible(true);
+				if(requete_sql.ConnexionEntreprise(fenprinc.getEntrepriseUser()) == true)
+				{
+					fengestentre.setVisible(true);
+				}
+				
 			break;
 		case "consult - princ":
 			fenprinc.setVisible(false);
