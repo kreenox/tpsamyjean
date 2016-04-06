@@ -33,7 +33,7 @@ public class Contr implements ActionListener{
 		//newstage
 		case "val - newstage":
 			
-			requete_sql.AjoutStage(.getNom(), String cp,String ville, String domaine,String email, String telephone, String siret);
+			//requete_sql.AjoutStage(fennouvstage.getOffre(), String cp,String ville, String domaine,String email, String telephone, String siret);
 			break;
 		case "annule - newstage":
 			fennouvstage.setVisible(false);
