@@ -96,7 +96,7 @@ public class ConsultStage extends JFrame{
 	//utilise les set pour afficher les caractéristiques d'un stage quand on met en parametre un stage  et une entreprise
 	public void AfficheStage(Stage s, Entreprise e){
 	setIntitule(s.getTitre());
-	String er = new String("e.getCodePostal()");
+	String er = new String("e.getCodePostal()");// le codepostal est une variable int 
 	setCode(er);
 	setVille(e.getVille());
 	setDomaine(e.getDomaine());
