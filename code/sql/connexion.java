@@ -1,10 +1,12 @@
 package sql;
+
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 
-public class connexion {
+public static class connexion {
 
 
 	  private static Connection connect;
