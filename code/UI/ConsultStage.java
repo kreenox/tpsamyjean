@@ -1,10 +1,9 @@
-
-
 package UI;
 
 import javax.swing.*;
 import java.awt.event.*;
-import model;
+import model.*;
+
 
 public class ConsultStage extends JFrame{
 
@@ -83,7 +82,7 @@ public class ConsultStage extends JFrame{
 	//set des elements de la fenetre
 	public void setIntitule(String s)
 	{inticont.setText(s);}
-	public void setCode(int s)
+	public void setCode(String s)
 	{codecont.setText(s);}
 	public void setVille(String s)
 	{villecont.setText(s);}
@@ -95,13 +94,15 @@ public class ConsultStage extends JFrame{
 	{telcont.setText(s);}
 
 	//utilise les set pour afficher les caractéristiques d'un stage quand on met en parametre un stage  et une entreprise
-	public void AfficheStage(Stage s; Entreprise e){
-	setIntitule(s.getTitre);
-	setCode(e.getCodePostal);
-	setVille(e.getVille);
-	setDomaine(e.getDomaine);
-	setEmail(e.geteMail);
-	setTelephone(e.getTelephone);
+	public void AfficheStage(Stage s, Entreprise e){
+	setIntitule(s.getTitre());
+	String er = new String("e.getCodePostal()");
+	setCode(er);
+	setVille(e.getVille());
+	setDomaine(e.getDomaine());
+	setEmail(e.geteMail());
+	setTelephone(e.getTelephone());
 	}
+
 
 }

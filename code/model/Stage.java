@@ -43,58 +43,58 @@ public class Stage {
 	}
 
 	/*get et set*/
-	String getSiret() {
+	public String getSiret() {
 		return siret;
 	}
-	void setSiret(String siret) {
+	public void setSiret(String siret) {
 		this.siret = siret;
 	}
-	String getIdStage() {
+	public String getIdStage() {
 		return idStage;
 	}
-	void setIdStage(String idStage) {
+	public void setIdStage(String idStage) {
 		this.idStage = idStage;
 	}
-	String getTitre() {
+	public String getTitre() {
 		return titre;
 	}
-	void setTitre(String titre) {
+	public void setTitre(String titre) {
 		this.titre = titre;
 	}
-	Date getDateDebut() {
+	public Date getDateDebut() {
 		return dateDebut;
 	}
-	void setDateDebut(Date dateDebut) {
+	public void setDateDebut(Date dateDebut) {
 		this.dateDebut = dateDebut;
 	}
-	Date getDateFin() {
+	public Date getDateFin() {
 		return dateFin;
 	}
-	void setDateFin(Date dateFin) {
+	public void setDateFin(Date dateFin) {
 		this.dateFin = dateFin;
 	}
-	String getNomEntreprise() {
+	public String getNomEntreprise() {
 		return nomEntreprise;
 	}
-	void setNomEntreprise(String nomEntreprise) {
+	public void setNomEntreprise(String nomEntreprise) {
 		this.nomEntreprise = nomEntreprise;
 	}
-	boolean isRemunererPossible() {
+	public boolean isRemunererPossible() {
 		return remunererPossible;
 	}
-	void setRemunererPossible(boolean remunererPossible) {
+	public void setRemunererPossible(boolean remunererPossible) {
 		this.remunererPossible = remunererPossible;
 	}
-	double getPaie() {
+	public double getPaie() {
 		return paie;
 	}
-	void setPaie(double paie) {
+	public void setPaie(double paie) {
 		this.paie = paie;
 	}
-	String getDescriptif(){
+	public String getDescriptif(){
 		return descriptif;
 	}
-	void setDescriptif(String descriptif){
+	public void setDescriptif(String descriptif){
 		this.descriptif=descriptif;
 	}
 	/*Methode*/

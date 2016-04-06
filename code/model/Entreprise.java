@@ -43,67 +43,67 @@ public class Entreprise{
 /*set et get*/
  
   
-  String getSiret() {
+  public String getSiret() {
 	return siret;
 }
 
-void setSiret(String siret) {
+public void setSiret(String siret) {
 	this.siret = siret;
 }
 
-String getNom() {
+public String getNom() {
 	return nom;
 }
 
-void setNom(String nom) {
+public void setNom(String nom) {
 	this.nom = nom;
 }
 
-String getAdresse() {
+public String getAdresse() {
 	return adresse;
 }
 
-void setAdresse(String adresse) {
+public void setAdresse(String adresse) {
 	this.adresse = adresse;
 }
 
-int getCodePostal() {
+public int getCodePostal() {
 	return codePostal;
 }
 
-void setCodePostal(int codePostal) {
+public void setCodePostal(int codePostal) {
 	this.codePostal = codePostal;
 }
 
-String getVille() {
+public String getVille() {
 	return ville;
 }
 
-void setVille(String ville) {
+public void setVille(String ville) {
 	this.ville = ville;
 }
 
-String getDomaine() {
+public String getDomaine() {
 	return domaine;
 }
 
-void setDomaine(String domaine) {
+public void setDomaine(String domaine) {
 	this.domaine = domaine;
 }
 
-String getTelephone() {
+public String getTelephone() {
 	return telephone;
 }
 
-void setTelephone(String telephone) {
+public void setTelephone(String telephone) {
 	this.telephone = telephone;
 }
 
-String geteMail() {
+public String geteMail() {
 	return eMail;
 }
 
-void seteMail(String eMail) {
+public void seteMail(String eMail) {
 	this.eMail = eMail;
 }
 
