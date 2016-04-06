@@ -14,7 +14,7 @@ public class GestStage extends JFrame
 	private JList entre;
 	private JList stage;
 	private JPanel pane = new JPanel();
-	private JComboBox dom;
+	private JList dom;
 
 	public GestStage()
 	{
@@ -30,7 +30,10 @@ public class GestStage extends JFrame
 		stage.setLayoutOrientation(JList.VERTICAL);
 		stage.setPreferredSize(new Dimension(250, 80));
 
-		dom = new JComboBox();
+		dom = new JList();
+		dom.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		dom.setLayoutOrientation(JList.VERTICAL);
+		dom.setPreferredSize(new Dimension(250, 80));
 		/*don't forget ^*/
 
 		this.setTitle("GestStage - consultation des stage");
