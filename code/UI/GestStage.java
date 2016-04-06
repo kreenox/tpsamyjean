@@ -22,10 +22,12 @@ public class GestStage extends JFrame
 		entre = new JList();
 		entre.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		entre.setLayoutOrientation(JList.VERTICAL);
+		entre.setPreferredSize(new Dimension(250, 80));
 
 		stage = new JList();
 		stage.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-		entre.setLayoutOrientation(JList.VERTICAL);
+		stage.setLayoutOrientation(JList.VERTICAL);
+		stage.setPreferredSize(new Dimension(250, 80));
 
 		dom = new JComboBox();
 		/*don't forget ^*/
