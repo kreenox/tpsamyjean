@@ -83,7 +83,7 @@ public class ConsultStage extends JFrame{
 	//set des elements de la fenetre
 	public void setIntitule(String s)
 	{inticont.setText(s);}
-	public void setCode(String s)
+	public void setCode(int s)
 	{codecont.setText(s);}
 	public void setVille(String s)
 	{villecont.setText(s);}
