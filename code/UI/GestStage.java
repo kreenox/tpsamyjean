@@ -20,11 +20,11 @@ public class GestStage extends JFrame
 
 		/*temporaire v*/
 		entre = new JList();
-		entre.setSelectionMode(ListeSelectionModel.SINGLE_SELECTION);
+		entre.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		entre.setLayoutOrientation(JList.VERTICAL);
 
 		stage = new JList();
-		stage.setSelectionMode(ListeSelectionModel.SINGLE_SELECTION);
+		stage.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		entre.setLayoutOrientation(JList.VERTICAL);
 
 		dom = new JComboBox();
@@ -61,6 +61,14 @@ public class GestStage extends JFrame
 
 
 
+	public void purgeEntreList()
+	{}
+	public void purgeStageList()
+	{}
+	public void setEntreList(String[] tab)
+	{}
+	public void setSatgeList(String[] tab)
+	{}
 
 	public void setListeners(ActionListener a){
 		val.addActionListener(a);
