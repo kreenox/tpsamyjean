@@ -4,6 +4,7 @@ package UI;
 
 import javax.swing.*;
 import java.awt.event.*;
+import model;
 
 public class ConsultStage extends JFrame{
 
@@ -93,5 +94,14 @@ public class ConsultStage extends JFrame{
 	public void setTelephone(String s)
 	{telcont.setText(s);}
 
+	//utilise les set pour afficher les caractéristiques d'un stage quand on met en parametre un stage  et une entreprise
+	public void AfficheStage(Stage s; Entreprise e){
+	setIntitule(s.getTitre);
+	setCode(e.getCodePostal);
+	setVille(e.getVille);
+	setDomaine(e.getDomaine);
+	setEmail(e.geteMail);
+	setTelephone(e.getTelephone);
+	}
 
 }
