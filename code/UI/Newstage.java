@@ -36,6 +36,9 @@ public class Newstage extends JFrame
 	//paie
 	private JLabel labpaie = new JLabel("Salaire journalier");
 	private JTextField textpaie = new JTextField();
+	//descriptif
+	private JLabel labdesc = new JLabel("Descriptif :");
+	private JTextField textdesc = new JTextField();
 	//fin du formulaire
 
 	public Newstage(ActionListener a)
@@ -96,6 +99,12 @@ public class Newstage extends JFrame
 		horizon.add(labpaie);
 		horizon.add(textpaie);
 		pane.add(horizon);
+		//ajout du descriptif
+		horizon = new JPanel();
+		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
+		horizon.add(labdesc);
+		horizon.add(textdesc);
+		pane.add(horizon);
 		//ajout des bouton ok annule
 		horizon = new JPanel();
 		horizon.setLayout(new BoxLayout(horizon, BoxLayout.LINE_AXIS));
@@ -114,7 +123,10 @@ public class Newstage extends JFrame
 	}
 
 	//get des zones de text
+		
 
+	public String getDescriptif()
+	{return textdesc.getText();}
 	public String getSIRET()
 	{return textsir.getText();}
 	public String getOffre()

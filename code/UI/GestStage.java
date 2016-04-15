@@ -6,6 +6,7 @@ import javax.swing.event.*;
 import java.awt.event.*;
 import java.awt.Dimension;
 
+
 public class GestStage extends JFrame
 {
 	
@@ -67,14 +68,26 @@ public class GestStage extends JFrame
 
 
 
-	public void purgeEntreList()
-	{}
-	public void purgeStageList()
-	{}
-	public void setEntreList(String[] tab)
-	{}
-	public void setSatgeList(String[] tab)
-	{}
+	public void purgeEntreList()// vider la liste des entreprise
+	{
+		entre.removeAll();
+	}
+	public void purgeStageList()// vider la liste des stage 
+	{
+		stage.removeAll();
+	}
+	public void setEntreList(String[] tab)// remplir la liste des entreprise
+	{
+		for(int i=0; i<tab.length; i++){
+			entre.add(tab[i]);
+		}
+	}
+	public void setSatgeList(String[] tab)// vider la liste des stages
+	{
+		for(int i=0; i<tab.length; i++){
+			stage.add(tab[i]);
+		}
+	}
 
 	public void setListeners(ActionListener a){
 		val.addActionListener(a);
